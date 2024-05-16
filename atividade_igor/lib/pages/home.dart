@@ -1,4 +1,6 @@
 
+
+import 'tela1.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/widgets.dart';
 
@@ -40,9 +42,10 @@ class homePage extends StatelessWidget {
                   height: 400
               ),
 
-                
                 ElevatedButton(
                   onPressed: () {
+                   Navigator.push(context,
+                   MaterialPageRoute(builder: (context) => tela1()),);
                     // Adicione a ação a ser executada quando o botão for pressionado
                   },
                    style: ElevatedButton.styleFrom(
